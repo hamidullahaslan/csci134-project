@@ -35,7 +35,8 @@
       "2": {
         "question": "Is the contractor conducting the required stormwater training and maintaining adequate records of this training in the project files?",
         "standards": {
-					"Hello": "world"
+					"Hello": "world",
+          "Test Kenta": "world"
         }
       }
     }
