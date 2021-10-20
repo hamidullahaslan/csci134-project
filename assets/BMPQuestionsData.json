@@ -1,0 +1,56 @@
+{
+  "SS": {
+    "category": "Soil Stabilization",
+    "types": {
+      "3": {
+        "type": "Hydraulic Mulch",
+        "questions": {
+          "1": {
+            "question": "Is Hydraulic Mulch applied as required?",
+            "standards": {
+              "CGP, Attachment C.D.2, D.D.2, E.D.2": "Risk Level 1, 2 and 3 dischargers shall provide effective soil cover for inactive areas and all finished slopes, open space, utility backfill, and completed lots.",
+              "CGP, Attachment D.E.3, E.E.3": "Risk Level 2 and 3 dischargers shall implement appropriate erosion control BMPs (runoff control and soil stabilization) in conjunction with sediment control BMPs for areas under active construction.",
+              "13-1.03A General": "Install soil stabilization materials for water pollution control practices in all work areas that are inactive or before storm events.",
+              "SPECs, 13-5.03A General": "Apply temporary soil stabilization materials within 24 hours after an area is ready to receive temporary soil stabilization or before a forecasted storm event"
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "SC": {
+    "category": "Sediment Control",
+    "types": {
+
+    }
+  },
+
+  "TC": {
+    "category": "Tracking Control",
+    "types": {
+      
+    }
+  },
+
+  "WE": {
+    "category": "Wind Erosion Control",
+    "types": {
+      
+    }
+  },
+
+  "NS": {
+    "category": "Non-Storm Water",
+    "types": {
+      
+    }
+  },
+
+  "WM": {
+    "category": "Waste Management",
+    "types": {
+      
+    }
+  }
+}

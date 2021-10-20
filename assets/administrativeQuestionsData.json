@@ -1,0 +1,62 @@
+{
+  "A": {
+    "category": "Plans and Permits",
+    "questions": {
+      "1": {
+        "question": "Is the signed SWPPP available at the construction site?",
+        "standards": {
+          "SPECs, 13-1.03A General": "Retain a printed copy of the authorized WPCP or SWPPP at the job site.",
+          "CGP, Order XIV.C SWPPP Requirements": "Risk level 1, 2, and 3 dischargers shall make the SWPPP available at the construction site during working hours while construction is occurring and shall be made available upon request by a State or Municipal inspector.",
+          "LTP, Order IX.D Availability and Public Records Access": "LTP, Order IX.D Availability and Public Records Access The SWPPP and any amendments shall be kept on site during construction activity and made available upon request of a representative of the Regional Water Board or any local storm water management agency which receives the storm water discharge."
+        }
+      },
+      "2": {
+        "question": "Is the SWPPP (and any amendments) prepared and signed by a certified QSD?",
+        "standards": {
+          "SPECs, 13-3.01A Summary": "You may assign a QSD other than the WPC manager to develop the SWPPP",
+          "CGP, Order VII.B.1 SWPPP Certification Requirements": "Risk level 1, 2, and 3 dischargers shall ensure that SWPPPs are written, amended and certified by a Qualified SWPPP Developer (QSD).",
+          "LTP, Order VII.B.1 SWPPP Certification Requirements": "The discharger shall ensure that SWPPPs are written, amended and certified by a Qualified SWPPP Developer (QSD)."
+        }
+      }
+    }
+  },
+
+  "B": {
+    "category": "Training",
+    "questions": {
+      "1": {
+        "question": "Does the WPC manager have a current certification (QSD) in the project files?",
+        "standards": {
+
+        }
+      },
+      "2": {
+        "question": "Is the contractor conducting the required stormwater training and maintaining adequate records of this training in the project files?",
+        "standards": {
+
+        }
+      }
+    }
+  },
+
+  "C": {
+    "category": "SMARTS",
+    "questions": {
+      
+    }
+  },
+
+  "D": {
+    "category": "Active Treatment System (ATS)",
+    "questions": {
+      
+    }
+  },
+
+  "E": {
+    "category": "Monitoring and Reporting",
+    "questions": {
+      
+    }
+  }
+}
