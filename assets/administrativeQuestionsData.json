@@ -27,13 +27,15 @@
       "1": {
         "question": "Does the WPC manager have a current certification (QSD) in the project files?",
         "standards": {
-
+					"SPECs, 13-1.01D(3)(a) General": "The WPC manager must be a QSP if the project requires a WPCP. The WPC manager must be a QSD if the project requires a SWPPP.",
+					"CGP, Order VII.B.2 SWPPP Certification Requirements": "The discharger shall ensure that all BMPs required by this General Permit are implemented by a Qualified SWPPP Practitioner (QSP). A QSP is a person responsible for non-stormwater and storm water visual observations, sampling and analysis.",
+					"LTP, Order VII.B.3 SWPPP Certification Requirements": "The Discharger shall ensure that all BMPs required by this General Permit are implemented by a Qualified SWPPP Practitioner (QSP)."
         }
       },
       "2": {
         "question": "Is the contractor conducting the required stormwater training and maintaining adequate records of this training in the project files?",
         "standards": {
-
+					"Hello": "world"
         }
       }
     }

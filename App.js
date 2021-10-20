@@ -118,18 +118,18 @@ function AppTitle() {
 /*=================*/
 
 function Form(props) {
-  const [formData, setFormData] = useState({A1: {}, B1: {}});
+  const [formData, setFormData] = useState({"findings": {A1: {}, B1: {}}});
 
   function updateFormData(name, value, findingNumber) {
     if(findingNumber) {
-      if(!formData.hasOwnProperty(findingNumber)) {
-        formData[findingNumber] = {};
+      if(!formData['findings'].hasOwnProperty(findingNumber)) {
+        formData['findings'][findingNumber] = {};
       }
       if(name === "Administrative Category" || name === "BMP Category" || name === "BMP Type") {
-        delete formData[findingNumber]['Question No.'];
-        delete formData[findingNumber]['BMP Type'];
+        delete formData['findings'][findingNumber]['Question No.'];
+        delete formData['findings'][findingNumber]['BMP Type'];
       }
-      formData[findingNumber][name] = value;
+      formData['findings'][findingNumber][name] = value;
     }
     else {
       formData[name] = value;
@@ -161,7 +161,7 @@ function FormInput(props) {
   var formInput;
   var name = props.label;
   var findingNumber = props.findingNumber;
-  var value = findingNumber? (formData[findingNumber][props.label] || props.value || '') : (formData[props.label] || '');
+  var value = findingNumber? (formData['findings'][findingNumber][props.label] || props.value || '') : (formData[props.label] || '');
   
   switch(props.type) {
     default:
@@ -203,8 +203,8 @@ function FormInput(props) {
 function AdministrationFinding(props) {
   const { formData, updateFormData } = useContext(FormContext);
   const findingNumber = "A" + props.findingNumber;
-  var administrativeCategory = formData[findingNumber]['Administrative Category'] || '';
-  var administrativeQuestion = formData[findingNumber]['Question No.'] || '';
+  var administrativeCategory = formData['findings'][findingNumber]['Administrative Category'] || '';
+  var administrativeQuestion = formData['findings'][findingNumber]['Question No.'] || '';
   
   var standards;
   if(administrativeQuestion) {
@@ -255,9 +255,9 @@ function AdministrationFinding(props) {
 function BMPFinding(props) {
   const { formData, updateFormData } = useContext(FormContext);
   const findingNumber = "B" + props.findingNumber;
-  var BMPCategory = formData[findingNumber]['BMP Category'] || '';
-  var BMPType = formData[findingNumber]['BMP Type'] || '';
-  var BMPQuestion = formData[findingNumber]['Question No.'] || '';
+  var BMPCategory = formData['findings'][findingNumber]['BMP Category'] || '';
+  var BMPType = formData['findings'][findingNumber]['BMP Type'] || '';
+  var BMPQuestion = formData['findings'][findingNumber]['Question No.'] || '';
 
   var standards;
   if(BMPQuestion) {
