@@ -234,7 +234,7 @@ function AdministrationFinding(props) {
       <FormInput label='Question No.' findingNumber={findingNumber} type='select' >
         <Picker.Item label='None' value='' />
         {
-          administrativeCategory &&
+          administrativeCategory !== '' &&
           Object.keys(administrativeQuestionsData[administrativeCategory]['questions']).map(key=>
             <Picker.Item key={key} label={administrativeQuestionsData[administrativeCategory]['questions'][key]['question']} value={key} />
           )
@@ -286,7 +286,7 @@ function BMPFinding(props) {
       <FormInput label='BMP Type' type='select' findingNumber={findingNumber} >
         <Picker.Item label='None' value='' />
           {
-            BMPCategory &&
+            BMPCategory !== '' &&
             Object.keys(BMPQuestionsData[BMPCategory]['types']).map(key=>
               <Picker.Item key={key} label={BMPQuestionsData[BMPCategory]['types'][key]['type']} value={key} />
             )
@@ -295,7 +295,7 @@ function BMPFinding(props) {
       <FormInput label='Question No.' type='select' findingNumber={findingNumber} >
         <Picker.Item label='None' value='' />
           {
-            BMPType &&
+            BMPType !== '' &&
             Object.keys(BMPQuestionsData[BMPCategory]['types'][BMPType]['questions']).map(key=>
               <Picker.Item key={key} label={BMPQuestionsData[BMPCategory]['types'][BMPType]['questions'][key]['question']} value={key} />
             )
